@@ -4,8 +4,12 @@ import 'package:recase/recase.dart';
 
 // Your existing run function
 Future<void> run(HookContext context) async {
-  // Your existing code
+  
+  final add_route = context.vars['add_route'];
 
+  if (add_route == 'false') {
+    return;
+  }
   final project_name = context.vars['project_name'];
   final feature_name = context.vars['feature_name'];
   final routes_path = 'lib/features/$feature_name/routes.dart';

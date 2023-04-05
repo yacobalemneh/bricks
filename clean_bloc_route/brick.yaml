@@ -1,7 +1,7 @@
 name: clean_bloc_route
 description: Brick to generate new screens with go router and bloc.
 
-version: 0.1.0+1
+version: 0.2.0+1
 
 environment:
   mason: ">=0.1.0-dev.47 <0.1.0"
@@ -12,17 +12,12 @@ vars:
     type: string
     description: The name of the feature you are adding this screen to.
     default: ''
-    prompt: Please enter the name of the feature this screen belongs to
+    prompt: Name of the feature this screen belongs to (eg. auth)?
   name:
     type: string
-    description: The name of the page/screen you want to create as "login" or "signup"
+    description: The name of the screen you want to create (eg. login)
     default: new_feature
-    prompt: Please enter the name of the new screen
-  needs_api:
-    type: boolean
-    description: Pick yes if the page isn't a stand alone UI element.
-    default: True
-    prompt: Does the page need a repository to make API calls?
+    prompt: Please enter the name of the new screen (eg.login)?
   bloc_type:
     type: enum
     description: If it's a small feature pick cubit.
@@ -31,3 +26,8 @@ vars:
     values:
       - bloc 
       - cubit
+  add_route:
+    type: boolean
+    description: You can do this manually too.
+    default: True
+    prompt: Add the screen route to your feature routes (feature/routes.dart) ?
