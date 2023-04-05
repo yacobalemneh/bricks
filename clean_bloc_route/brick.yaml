@@ -1,0 +1,33 @@
+name: clean_bloc_route
+description: Brick to generate new screens with go router and bloc.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.47 <0.1.0"
+
+
+vars:
+  feature_name:
+    type: string
+    description: The name of the feature you are adding this screen to.
+    default: ''
+    prompt: Please enter the name of the feature this screen belongs to
+  name:
+    type: string
+    description: The name of the page/screen you want to create as "login" or "signup"
+    default: new_feature
+    prompt: Please enter the name of the new screen
+  needs_api:
+    type: boolean
+    description: Pick yes if the page isn't a stand alone UI element.
+    default: True
+    prompt: Does the page need a repository to make API calls?
+  bloc_type:
+    type: enum
+    description: If it's a small feature pick cubit.
+    default: bloc
+    prompt: Create a bloc class or a cubit?
+    values:
+      - bloc 
+      - cubit
