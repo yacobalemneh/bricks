@@ -1,5 +1,5 @@
 name: clean_bloc_route
-description: Brick to generate new screens with go router and bloc.
+description: Generates new screens with bloc and routes using go router, it automatically updates the routes if you use clean_router_project to create your project.
 
 version: 0.2.0+1
 
@@ -10,14 +10,14 @@ environment:
 vars:
   feature_name:
     type: string
-    description: The name of the feature you are adding this screen to.
+    description: Can be "auth", "settings" etc....
     default: ''
-    prompt: Name of the feature this screen belongs to (eg. auth)?
+    prompt: Name of the feature this screen belongs to? (eg. auth)
   name:
     type: string
-    description: The name of the screen you want to create (eg. login)
-    default: new_feature
-    prompt: Please enter the name of the new screen (eg.login)?
+    description: Can be login, signup etc...
+    default: my_screen
+    prompt: New screen for the feature? (eg. login)
   bloc_type:
     type: enum
     description: If it's a small feature pick cubit.
@@ -30,4 +30,4 @@ vars:
     type: boolean
     description: You can do this manually too.
     default: True
-    prompt: Add the screen route to your feature routes (feature/routes.dart) ?
+    prompt: Add the screen route to your feature routes (feature/routes.dart)?
