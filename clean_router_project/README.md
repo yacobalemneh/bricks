@@ -5,7 +5,6 @@ This brick creates a new Flutter project with clean architecture, go_router for 
 
 # 
 
-![coverage][coverage_badge]
 [![License: MIT][license_badge]][license_link]
 
 A new brick created with the Mason CLI that sets up a Flutter project with clean architecture, go_router, and feature-based route management
