@@ -4,14 +4,19 @@ import 'package:{{project_name.snakeCase()}}/presentation/routes.dart';
 import 'package:{{project_name.snakeCase()}}/presentation/theme/theme_data.dart';
 
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
 
   @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  final goRouter = GoRouter(
+    routes: appRoutes,
+  );
+  @override
   Widget build(BuildContext context) {
-    final goRouter = GoRouter(
-      routes: appRoutes,
-    );
     return MaterialApp.router(
       theme: AppTheme.customTheme,
       localizationsDelegates: AppLocalizations.localizationsDelegates,

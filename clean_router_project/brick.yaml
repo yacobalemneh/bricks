@@ -1,7 +1,7 @@
 name: clean_router_project
 description: A brick that sets up a Flutter project with clean architecture, go_router, and feature-based route management.
 
-version: 0.1.0+1
+version: 0.1.1
 
 environment:
   mason: ">=0.1.0-dev.47 <0.1.0"
