@@ -5,7 +5,7 @@ import 'package:{{project_name.snakeCase()}}/features/{{name.snakeCase()}}/{{fir
 
 
 final {{first_screen.camelCase()}}ScreenRoute = GoRoute(
-  path: '{{name.snakeCase()}}/{{first_screen.snakeCase()}}',
+  path: '/{{name.snakeCase()}}/{{first_screen.snakeCase()}}',
   pageBuilder: (context, state) {
     return MaterialPage(
       child: BlocProvider(
