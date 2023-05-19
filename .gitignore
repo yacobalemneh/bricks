@@ -10,6 +10,8 @@
 .history
 .svn/
 todos.md
+**/.DS_Store
+
 
 # IntelliJ related
 *.iml
