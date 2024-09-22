@@ -1,11 +1,11 @@
 name: clean_bloc_feature
-description: Create features (lib/features/) and initial screen for projects created with clean_firebase_project.
-
+description: A new brick created with the Mason CLI.
 
 version: 0.1.0+1
 
+
 environment:
-  mason: ">=0.1.0-dev.47 <0.1.0"
+  mason: ">=0.1.0-dev.60 <0.1.0"
 
 vars:
   name:

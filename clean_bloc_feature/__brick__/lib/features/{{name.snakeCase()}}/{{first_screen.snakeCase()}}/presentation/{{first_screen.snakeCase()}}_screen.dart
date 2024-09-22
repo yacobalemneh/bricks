@@ -11,9 +11,9 @@ class {{first_screen.pascalCase()}}Screen extends StatelessWidget {
     final l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           Text('{{first_screen.pascalCase()}} screen'),
         ],
       ),

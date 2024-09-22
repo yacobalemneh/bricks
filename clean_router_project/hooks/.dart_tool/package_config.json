@@ -179,10 +179,13 @@
       "name": "very_good_core_hooks",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-03-30T20:49:00.073119Z",
+  "generated": "2024-09-21T15:17:59.576408Z",
   "generator": "pub",
-  "generatorVersion": "2.19.4"
+  "generatorVersion": "3.5.3",
+  "flutterRoot": "file:///Users/yacobalemneh/development/flutter",
+  "flutterVersion": "3.24.3",
+  "pubCache": "file:///Users/yacobalemneh/.pub-cache"
 }
