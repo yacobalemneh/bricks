@@ -13,4 +13,7 @@ void register{{name.pascalCase()}}Routes(RouteManager routeManager) {
       path: '/{{name.snakeCase()}}/{{first_screen.snakeCase()}}',
       pageBuilder: (state) => {{first_screen.pascalCase()}}Route(state),
     );
+
+  // Register routes for other features here
+
 }

@@ -3,9 +3,9 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/archive-3.3.6",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/archive-3.6.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "async",
@@ -15,15 +15,15 @@
     },
     {
       "name": "checked_yaml",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/checked_yaml-2.0.2",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/collection-1.17.1",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/collection-1.19.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "convert",
@@ -33,15 +33,21 @@
     },
     {
       "name": "crypto",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/crypto-3.0.2",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/crypto-3.0.5",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/ffi-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/http-0.13.5",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/http-1.2.2",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.3"
     },
     {
       "name": "http_parser",
@@ -50,32 +56,32 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "js",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "name": "io",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "2.12"
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/json_annotation-4.8.0",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "mason",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/mason-0.1.0-dev.48",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/mason-0.1.0-dev.60",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.5"
     },
     {
       "name": "mason_logger",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/mason_logger-0.2.5",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/mason_logger-0.3.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.5"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/meta-1.9.1",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/meta-1.16.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -87,15 +93,9 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/path-1.8.3",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "pointycastle",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/pointycastle-3.7.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.0"
     },
     {
       "name": "pool",
@@ -105,7 +105,7 @@
     },
     {
       "name": "pub_semver",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/pub_semver-2.1.3",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -146,10 +146,22 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "yaml",
-      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/yaml-3.1.1",
+      "name": "web",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/web-1.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "win32",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/win32-5.5.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///Users/yacobalemneh/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "clean_bloc_route_hooks",
@@ -158,7 +170,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-09-21T15:17:57.573256Z",
+  "generated": "2024-09-22T03:17:48.272478Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///Users/yacobalemneh/development/flutter",

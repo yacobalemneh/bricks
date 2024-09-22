@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:{{project_name.snakeCase()}}/l10n/l10n.dart';
 
 
-
 class {{name.pascalCase()}}Screen extends StatelessWidget {
   const {{name.pascalCase()}}Screen({super.key});
 
@@ -11,9 +10,9 @@ class {{name.pascalCase()}}Screen extends StatelessWidget {
     final l10n = context.l10n;
     return Scaffold(
       appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children: [
           Text('{{name.snakeCase()}} screen'),
         ],
       ),

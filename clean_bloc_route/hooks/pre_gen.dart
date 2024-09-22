@@ -1,33 +1,28 @@
 import 'package:mason/mason.dart';
 import 'dart:io';
+import 'package:recase/recase.dart';
 
 Future<void> run(HookContext context) async {
-  final type = context.vars['bloc_type'];
-  final feature_name = context.vars['feature_name'];
+  final type = context.vars['bloc_type'] as String;
+  final featureName = ReCase(context.vars['feature_name'] as String).snakeCase;
   final dir = Directory.current.path;
-  final app_name = dir.split('/').last;
-  context.logger.info('App Name: $app_name');
-  
-    // Check if feature_name directory exists in the lib folder
-  final feature_directory = Directory('$dir/lib/features/$feature_name');
-  final bool feature_exists = await feature_directory.exists();
+  final appName = ReCase(dir.split('/').last).snakeCase;
 
-  context.logger.info('Feature Directory: $feature_directory');
-  if (feature_name.isEmpty || !feature_exists) {
+  context.logger.info('App Name: $appName');
+
+  // Check if the feature directory exists
+  final featureDirectory = Directory('$dir/lib/features/$featureName');
+  final bool featureExists = await featureDirectory.exists();
+
+  if (!featureExists) {
     throw Exception(
-        'The directory $feature_name does not exist in the lib/features folder. Please enter a correct feature_name.');
+        'The directory $featureName does not exist in the lib/features folder. Please enter a correct feature_name.');
   }
-  final routes_path = 'lib/features/$feature_name/routes.dart';
-  final routes_file = File(routes_path);
-  final bool routes_file_exists = await routes_file.exists();
-  final create_file = !routes_file_exists;
-  
+
   context.vars = {
     ...context.vars,
     'cubit': type == 'cubit',
     'bloc': type == 'bloc',
-    'project_name': app_name,
-    'initiate_route': create_file,
+    'project_name': appName,
   };
-  context.logger.info(context.vars.entries.toString());
 }
