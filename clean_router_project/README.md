@@ -26,6 +26,7 @@ This brick comes with two additional bricks that help you create new features an
 
 The project is organized into the following structure:
 
+```
 lib/
 ├── core/
 ├── features/
@@ -52,7 +53,7 @@ lib/
 ├── main_staging.dart
 └── ...
 
-
+```
 
 ### Working with Routes
 
